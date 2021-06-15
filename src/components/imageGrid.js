@@ -18,7 +18,7 @@ export default function ImageGrid(imageArr) {
   }, []);
 
   return (
-    <div>
+    <div style={{ width: "90%", margin: "auto", marginTop: "20px" }}>
       <Grid
         container
         spacing={4}
@@ -31,8 +31,8 @@ export default function ImageGrid(imageArr) {
             //   <a href={imageObj.large}>
             //     <img src={imageObj.small} alt="" />
             //   </a>
-            <Grid item xs={4}>
-              <a href={imageObj.large}>
+            <Grid item sm={4} xs={12}>
+              <a href={imageObj.large} target="_blank">
                 <img src={imageObj.small} alt="" />
               </a>
             </Grid>
